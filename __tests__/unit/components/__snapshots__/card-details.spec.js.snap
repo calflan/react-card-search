@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component should match snapshot 1`] = `
+<div
+  className="card-listings__card-details "
+>
+  <a
+    className="card-listings__card-details-overlay"
+    onClick={[Function]}
+  />
+  <div
+    className="card-listings__card-details-inner"
+  >
+    <a
+      className="card-listings__card-details-close"
+      onClick={[Function]}
+    >
+      X
+    </a>
+    <img
+      alt="New Job Card"
+      src="http://someimage.com"
+    />
+    <section
+      className="card-listings__card-details-inner-information"
+    >
+      <h3>
+        New Job Card
+      </h3>
+      <h4
+        className="card-listings__card-details-stock-status--outOfStock"
+      >
+        Sorry, this product is out of stock!
+      </h4>
+      <ul>
+        <h4>
+          Sizes available
+        </h4>
+        <li
+          key="0"
+        >
+          Large
+           - £
+        </li>
+        <li
+          key="1"
+        >
+          Medium
+           - £
+        </li>
+      </ul>
+      <h4>
+        Description
+      </h4>
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": undefined,
+          }
+        }
+      />
+    </section>
+  </div>
+</div>
+`;
