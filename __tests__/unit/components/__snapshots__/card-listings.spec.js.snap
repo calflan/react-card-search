@@ -2,8 +2,25 @@
 
 exports[`Contact Component should match snapshot 1`] = `
 <Fragment>
-  <h1>
-    New Job cards
-  </h1>
+  <Header />
+  <section
+    className="container"
+    id="card-container"
+  >
+    <h2>
+      Our New Job cards
+    </h2>
+    <ul
+      class="card-listings"
+    >
+      <loader />
+    </ul>
+    <a
+      className="scroll-to-top"
+      href="#card-container"
+    >
+      ⇧
+    </a>
+  </section>
 </Fragment>
 `;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component should match snapshot 1`] = `
+<Fragment>
+  <a
+    id="card-image"
+    onClick={[Function]}
+  >
+    <img
+      src="http://someimage.com"
+    />
+  </a>
+  <p>
+    Reviews (
+    1234
+    )
+  </p>
+</Fragment>
+`;

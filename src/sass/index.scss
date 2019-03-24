@@ -1,0 +1,68 @@
+@import './variables/breakpoints';
+@import './variables/colours';
+@import './typography';
+@import './card-listings';
+@import './loader';
+
+body {
+	margin: 0;
+
+	&.body--lock-scroll {
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+		position: fixed;
+	}
+}
+
+header {
+	background: white;
+	box-shadow: 0 0 16px rgba(0,0,0,.3);
+	padding: 0.5rem;
+	margin-top: -8rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+
+	@media screen and (min-width: $sub-medium) {
+		padding: 1rem 5rem;
+	}
+}
+
+.container {
+	margin: auto 2rem;
+
+	@media screen and (min-width: $medium) {
+		margin: auto 7rem;
+	}
+}
+
+ul {
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: $moonpig-pink;
+
+	&.scroll-to-top {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: 1rem;
+		margin: 1rem;
+		font-size: 30px;
+		background: $moonpig-pink;
+		color: white;
+
+		&:hover {
+			background: white;
+			color: $moonpig-pink;
+		}
+	}
+}

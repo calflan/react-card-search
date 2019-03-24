@@ -5,45 +5,55 @@ jest.mock('axios');
 
 describe('Card Listings Service', () => {
   let cardListings;
+  let cardDetail;
 
   beforeEach(() => {
-    cardListings = { 
-      "Products":[
-        {
-          "Price":{  
-            "Value":3.29,
-            "Currency":"£"
+    cardListings = {
+      data: {
+        Products: [
+          {
+            Price: {  
+              Value: 3.29,
+              Currency: "£"
+            },
+            SoldOut: 0,
+            Title: "Classic Portrait Personalised Photo Upload Card"
           },
-          "SoldOut":0,
-          "Title":"Classic Portrait Personalised Photo Upload Card"
-        },
-        {
-          "Price":{  
-            "Value":3.99,
-            "Currency":"£"
-          },
-          "SoldOut":0,
-          "Title":"Classic Portrait Personalised Photo Upload Card"
-        }
-      ]
+          {
+            Price: {  
+              Value: 3.99,
+              Currency: "£"
+            },
+            SoldOut: 0,
+            Title: "Classic Portrait Personalised Photo Upload Card"
+          }
+        ]
+      }
     };
+
+    cardDetail = {
+      data: {
+        Product: {
+          Price: 2.99,
+          ImageUrl: "http://someimageurl.com"
+        }
+      }
+    }
   });
 
   it('should return a list of cards', () => {
-    const resp = {response: cardListings};
+    const resp = cardListings;
     axios.get.mockImplementation(() => Promise.resolve(resp));
 
-    return getCards().then(resp => expect(resp.response).toEqual(cardListings));
+    return getCards().then(response => expect(response).toEqual(cardListings.data.Products));
   });
 
-  it('should return the details a card from the specified ID', () => {
+  it('should return the details of a card from the specified ID', () => {
     const id = 1;
-    const resp = {response: cardListings.Products[id]};
-    axios.get.mockImplementation(() => Promise.resolve(resp));
-
-    console.log(resp);
+    const resp = cardDetail;
+    axios.get.mockResolvedValue(resp);
 
     return getCardDetailsById(id)
-      .then(resp => expect(resp.response).toEqual(cardListings.Products[id]));
+      .then(response => expect(response).toEqual(cardDetail.data));
   });
 });

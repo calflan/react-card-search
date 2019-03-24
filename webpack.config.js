@@ -31,9 +31,12 @@ module.exports = [
     plugins: [
       new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en-gb/),
       new CopyWebpackPlugin([
-        { from: './src/card-search.html', to: 'card-search.html' }
+        { from: './src/card-listings.html', to: 'card-listings.html' }
       ]),
       (process.env.apiEnv === 'prod' ? new UglifyJsPlugin() : { apply: () => {}})
-    ]
+    ],
+    devServer: {
+      contentBase: path.resolve('web')
+    }
   }
 ]
