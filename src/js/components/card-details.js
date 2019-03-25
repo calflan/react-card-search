@@ -47,7 +47,7 @@ export default class CardDetails extends React.Component {
 	}
 
 	_createDescription() {
-		return {__html: `${this.props.details.Description.substring(0, 700)}...`};
+		return {__html: this.props.details.Description};
 	}
 
 	_handleClose() {

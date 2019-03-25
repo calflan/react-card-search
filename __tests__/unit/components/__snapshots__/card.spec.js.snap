@@ -3,17 +3,40 @@
 exports[`Contact Component should match snapshot 1`] = `
 <Fragment>
   <a
+    href="#"
     id="card-image"
     onClick={[Function]}
+    role="link"
   >
     <img
+      role="img"
       src="http://someimage.com"
     />
   </a>
-  <p>
-    Reviews (
-    1234
-    )
-  </p>
+  <div
+    class="card-listings__card-reviews"
+  >
+    <StarRatings
+      changeRating={null}
+      gradientPathName=""
+      ignoreInlineStyles={false}
+      name="rating"
+      numberOfStars={5}
+      rating={0}
+      starDimension="20px"
+      starEmptyColor="rgb(203, 211, 227)"
+      starHoverColor="rgb(230, 67, 47)"
+      starRatedColor="pink"
+      starSpacing="0px"
+      svgIconPath="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+      svgIconViewBox="0 0 51 48"
+      typeOfWidget="Star"
+    />
+    <span>
+      (
+      1234
+      )
+    </span>
+  </div>
 </Fragment>
 `;

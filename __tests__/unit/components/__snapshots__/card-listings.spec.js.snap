@@ -3,15 +3,18 @@
 exports[`Contact Component should match snapshot 1`] = `
 <Fragment>
   <Header />
-  <section
+  <main
     className="container"
     id="card-container"
   >
-    <h2>
+    <h2
+      role="heading"
+    >
       Our New Job cards
     </h2>
     <ul
       class="card-listings"
+      role="listbox"
     >
       <loader />
     </ul>
@@ -21,6 +24,6 @@ exports[`Contact Component should match snapshot 1`] = `
     >
       ⇧
     </a>
-  </section>
+  </main>
 </Fragment>
 `;

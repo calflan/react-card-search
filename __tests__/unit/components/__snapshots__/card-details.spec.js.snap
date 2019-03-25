@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact Component should match snapshot 1`] = `
-<div
+<article
   className="card-listings__card-details "
+  role="dialog"
 >
   <a
     className="card-listings__card-details-overlay"
     onClick={[Function]}
+    role="overlay"
   />
   <div
     className="card-listings__card-details-inner"
@@ -14,42 +16,53 @@ exports[`Contact Component should match snapshot 1`] = `
     <a
       className="card-listings__card-details-close"
       onClick={[Function]}
+      role="closelink"
     >
       X
     </a>
     <img
       alt="New Job Card"
+      role="productimage"
       src="http://someimage.com"
     />
     <section
       className="card-listings__card-details-inner-information"
     >
-      <h3>
+      <h3
+        role="heading"
+      >
         New Job Card
       </h3>
       <h4
         className="card-listings__card-details-stock-status--outOfStock"
+        role="productstockstatus"
       >
         Sorry, this product is out of stock!
       </h4>
       <ul>
-        <h4>
+        <h4
+          role="productsizesheading"
+        >
           Sizes available
         </h4>
         <li
           key="0"
+          role="productsizelistitem"
         >
           Large
            - £
         </li>
         <li
           key="1"
+          role="productsizelistitem"
         >
           Medium
            - £
         </li>
       </ul>
-      <h4>
+      <h4
+        role="descriptionheading"
+      >
         Description
       </h4>
       <p
@@ -58,8 +71,9 @@ exports[`Contact Component should match snapshot 1`] = `
             "__html": undefined,
           }
         }
+        role="description"
       />
     </section>
   </div>
-</div>
+</article>
 `;

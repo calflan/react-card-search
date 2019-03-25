@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = [
   {
-    entry: ['@babel/polyfill', './src/js/index.js'],
+    entry: './src/js/index.js',
     output: {
       filename: 'scripts/card-listings.js',
       path: path.join(__dirname, 'web')
