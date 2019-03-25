@@ -23,7 +23,7 @@ export default class Card extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<a role="link" href="#" id="card-image" onClick={this._handleCardExpand}>
+				<a role="link" href="#" className="card-image" onClick={this._handleCardExpand}>
 					<img role="img" src={this.props.card.ProductImage.Link.Href} alt={this.props.card.Title} />
 				</a>
 

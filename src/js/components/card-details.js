@@ -16,7 +16,7 @@ export default class CardDetails extends React.Component {
 				<div className="card-listings__card-details-inner">
 					{this.props.status !== "loading" | "error" ?
 						<React.Fragment>
-							<a role="closelink" className="card-listings__card-details-close" onClick={this._handleClose}>X</a>
+							<a href="#" role="closelink" className="card-listings__card-details-close" onClick={this._handleClose}>X</a>
               <img role="productimage" src={this.props.details.ImageUrls[0].ImageUrl} alt={this.props.details.Title} />
 							<section className="card-listings__card-details-inner-information">
 								<h3 role="heading">{this.props.details.Title}</h3>

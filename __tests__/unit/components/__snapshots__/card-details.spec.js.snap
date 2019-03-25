@@ -15,6 +15,7 @@ exports[`Contact Component should match snapshot 1`] = `
   >
     <a
       className="card-listings__card-details-close"
+      href="#"
       onClick={[Function]}
       role="closelink"
     >
