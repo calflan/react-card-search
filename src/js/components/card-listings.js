@@ -34,12 +34,12 @@ export default class CardListings extends React.Component {
       <React.Fragment>
         <Header />
 
-        <section id="card-container" className="container">
-          <h2>Our New Job cards</h2>
-          <ul class="card-listings">
+        <main id="card-container" className="container">
+          <h2 role="heading">Our New Job cards</h2>
+          <ul role="listbox" class="card-listings">
             {this.state.status !== "loading" | "error" ?
               this.state.cards.map(card => (
-                <li key={card.MoonpigProductNo} className="card-listings__card">
+                <li role="listitem" key={card.MoonpigProductNo} className="card-listings__card">
                     <Card key={card.MoonpigProductNo} card={card} />
                 </li>
               ))
@@ -49,7 +49,7 @@ export default class CardListings extends React.Component {
           </ul>
 
           <a href="#card-container" className="scroll-to-top">&#8679;</a>
-        </section>
+        </main>
       </React.Fragment>
     );
   }

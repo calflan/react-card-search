@@ -2,7 +2,11 @@
 @import './variables/colours';
 
 #card-container {
-  margin-top: 8rem;
+  margin-top: 5rem;
+
+  @media screen and (min-width: $small) {
+    margin-top: 8rem;
+  }
 
   h2 {
     text-align: center;
@@ -35,7 +39,15 @@
     img {
       max-width: 100%;
       box-shadow: 7px 7px 10px -2px #ccc;
-      cursor: pointer;
+    }
+
+    .card-listings__card-reviews {
+      margin-top: 0.5rem;
+      align-self: center;
+
+      span {
+        margin-left: 0.5rem;
+      }
     }
   }
 
@@ -49,8 +61,6 @@
       flex-wrap: wrap;
       justify-content: space-around;
       position: fixed;
-      min-width: 50%;
-      min-height: 50%;
       top: 0;
       left: 0;
       right: 0;
@@ -61,11 +71,17 @@
       background: white;
 
       @media screen and (min-width: $small) {
+        min-width: 50%;
+        min-height: 50%;
         top: 10vh;
         bottom: 10vh;
         left: 15vw;
         right: 15vw;
         padding: 2rem;
+      }
+
+      h3 {
+        margin: 0;
       }
 
       h4 {
@@ -81,22 +97,28 @@
       }
 
       img {
-        cursor: alias;
-        margin-top: 4rem;
-        max-height: 60%;
+        margin-top: 3rem;
+        max-height: 70%;
 
         @media screen and (min-width: $small) {
           margin-right: 1rem;
           margin-top: 0;
         }
+
+        @media screen and (min-width: $medium) {
+          max-width: 45%;
+        }
       }
       
       .card-listings__card-details-inner-information {
+        margin-top: 1rem;
+
         @media screen and (min-width: $sub-medium) {
-          max-width: 80%
+          max-width: 80%;
         }
         @media screen and (min-width: $medium) {
-          max-width: 50%
+          max-width: 50%;
+          margin-top: 0;
         }
       }
 

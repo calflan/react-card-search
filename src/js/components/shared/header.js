@@ -5,7 +5,7 @@ export default class Header extends React.Component {
 	render() {
 		return (
 			<header>
-				<h1>Moonpig</h1>
+				<img id="logo" role="img" src="https://i.imgur.com/RpDClsG.png" alt="Moonpig logo" />
 			</header>
 		);
 	}
