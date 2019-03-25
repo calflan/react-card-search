@@ -11,7 +11,6 @@
     "acceptance-tests:open": "npm run cypress:open",
     "unit-test": "jest --coverage",
     "unit-tests": "jest --coverage",
-    "test": "concurrently --kill-others \"npm run unit-test\" \"npm run acceptance-test\"",
     "build": "webpack && npm run build-css",
     "start": "concurrently --kill-others \"webpack-dev-server --inline --no-info\" \"npm run watch-css\"",
     "watch": "webpack-dev-server --watch-content-base ./web",

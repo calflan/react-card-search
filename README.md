@@ -7,11 +7,9 @@ Displays cards from an API and allows user to inspect them individually.
 `npm start` starts the project locally.
 
 # Run tests
-`npm test` runs both acceptance and unit tests.
-
 Use `npm run unit-test` or `npm run unit-tests` to run the `Jest` unit tests on their own.
 
-Use `npm run acceptance-test` or `npm run acceptance-tests` to run cypress tests.
+Use `npm run acceptance-test` or `npm run acceptance-tests` to run `Cypress` tests on their own.
 
 # Technology & Architecture
 ## Build tools used
