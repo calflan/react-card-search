@@ -56,7 +56,7 @@ The first improvement I would make if I was to spend more time on this, would be
 
 The next thing I would like to tackle if I was to spend more time on the app, would be to implement a search by card name functionality. I would do this by looping over the response from the API and return the cards whose title's contain the words the user inputs. I would return the results as the user types, so that the feedback loop is almost instant.
 
-I could also improve the test coverage of the app if I spent more time on it, by testing the `onEnterPress()` function.
+I could also improve the test coverage of the app if I spent more time on it, by testing the `onEnterPress()` method
 
 Sometimes, card details have quite long descriptions that take up a lot of space in the modal, which on a mobile can mean a lot of scrolling for the user. So I would to trim the descriptions using the `substring()` method. Also, it would be nice to add a 'view more' button if I spent more time on the app, to reveal the rest of the description, should the user want to read all of it.
 
@@ -67,4 +67,4 @@ The final improvement I would like to make to the app, would be to add Redux. Th
 Something I considered but decided not to implement, was a smooth scrolling animation when the scroll-to-top button is clicked. I decided against implementing this in an effort to maintain a good level of accessibility. It is generally not best for accessibility to hijack native browser actions, such as scrolling or switching focus.
 
 ## Hosting
-My application compiles to a handy `web` directory, which the contents of can be used to statically host my app. I have done so using github pages https://calflan.github.io/react-cards/card-listings.html
+My application compiles to a handy `web` directory, which the contents of can be used to statically host my app. I have done so using github pages https://calflan.github.io/react-cards/card-listings
