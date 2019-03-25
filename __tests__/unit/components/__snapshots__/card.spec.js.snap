@@ -5,10 +5,12 @@ exports[`Contact Component should match snapshot 1`] = `
   <a
     className="card-image"
     href="#"
+    key="1234"
     onClick={[Function]}
     role="link"
   >
     <img
+      key="1234"
       role="img"
       src="http://someimage.com"
     />

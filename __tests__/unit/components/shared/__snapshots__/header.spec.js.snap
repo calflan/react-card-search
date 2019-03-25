@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component should match snapshot 1`] = `
+<header>
+  <img
+    alt="Moonpig logo"
+    id="logo"
+    role="img"
+    src="https://i.imgur.com/RpDClsG.png"
+  />
+</header>
+`;

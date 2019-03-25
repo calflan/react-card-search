@@ -23,8 +23,8 @@ export default class Card extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<a role="link" href="#" className="card-image" onClick={this._handleCardExpand}>
-					<img role="img" src={this.props.card.ProductImage.Link.Href} alt={this.props.card.Title} />
+				<a key={this.props.card.MoonpigProductNo} role="link" href="#" className="card-image" onClick={this._handleCardExpand}>
+					<img key={this.props.card.MoonpigProductNo} role="img" src={this.props.card.ProductImage.Link.Href} alt={this.props.card.Title} />
 				</a>
 
         <div class="card-listings__card-reviews">

@@ -38,8 +38,8 @@ export default class CardListings extends React.Component {
           <h2 role="heading">Our New Job cards</h2>
           <ul role="listbox" class="card-listings">
             {this.state.status !== "loading" | "error" ?
-              this.state.cards.map(card => (
-                <li role="listitem" key={card.MoonpigProductNo} className="card-listings__card">
+              this.state.cards.map((card, index) => (
+                <li role="listitem" key={index} className="card-listings__card">
                     <Card key={card.MoonpigProductNo} card={card} />
                 </li>
               ))

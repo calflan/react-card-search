@@ -34,7 +34,7 @@ describe('Contact Component', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should close card details and call detailsExpanded callback when close is clicked', () => {
+  it('should close card details and call detailsExpanded callback and _handleClose method when close is clicked', () => {
     const handleClose = jest.spyOn(component.instance(), '_handleClose');
     const closeIcon = component.find('.card-listings__card-details-close');
 
