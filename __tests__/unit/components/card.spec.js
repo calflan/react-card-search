@@ -35,8 +35,7 @@ describe('Contact Component', () => {
 
   it('should call handleCardExpand and set cardDetails and status in state to complete when card image is clicked', () => {
     component.setState({ cardDetails: {}, status: "loading" });
-
-    const cardListingsServicePromise = new Promise((resolve, reject) => {resolve(card)});
+    
     spyOn(CardListingsService, "getCardDetailsById").and.returnValue(Promise.resolve(card));
 
     const cardImage = component.find('a').first();

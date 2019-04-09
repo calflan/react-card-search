@@ -35,13 +35,12 @@ describe('Contact Component', () => {
   });
 
   it('should close card details and call detailsExpanded callback and _handleClose method when close is clicked', () => {
-    const handleClose = jest.spyOn(component.instance(), '_handleClose');
     const closeIcon = component.find('.card-listings__card-details-close');
 
     closeIcon.simulate('click');
-    component.instance()._handleClose();
     
-    expect(handleClose).toHaveBeenCalled();
-    expect(mockToggleCardExpandCallBack).toHaveBeenCalled();
+    component.instance()._handleClose(() => {
+      expect(mockToggleCardExpandCallBack).toHaveBeenCalled();
+    });
   });
 });
